@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<restaurants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://www.algonquincollege.com/onlineservice/reviews">
+  <restaurant status="reviewed">
+    <name>Laughing Man</name>
+    <logo>Visit the Laughing Man</logo>
+    <image>
+      <file>laughing-man.gif</file>
+      <width unit="pixel">50</width>
+      <length unit="pixel">200</length>
+    </image>
+    <location>
+      <address>2100 Lakeview Road</address>
+      <city>Kanata</city>
+      <province>Ontario</province>
+      <postalCode>K2K 2K7</postalCode>
+    </location>
+    <phone>613-123-4567</phone>
+    <rating max="5" min="0">5</rating>
+    <date>
+      <day>10</day>
+      <month>1</month>
+      <year>2015</year>
+    </date>
+    <reviewer>Hunter S. Thompson</reviewer>
+    <summary>Laughing Man is no stranger to praise, consistently ranked one of the best restaurants in the city. A place to see and be seen, it’s ideal for celebrating a special occasion.</summary>
+    <menu>
+      <food type="appetizers">
+        <description>Crab cakes with a creamy dill sauce served with crispy herbed fries</description>
+        <prices>
+          <price currency="CAD" type="uncountable">23</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="appetizers">
+        <description>Garden vegetable soup with chocolate sauce</description>
+        <prices>
+          <price currency="CAD" type="uncountable">15</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Braised jumbo sea scallops on a sun-dried roast tomato base</description>
+        <prices>
+          <price currency="CAD" type="uncountable">39</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Free-range chicken breast stuffed with morels in a brandy sauce</description>
+        <prices>
+          <price currency="CAD" type="uncountable">31</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Roast pork loin on a bed of garlic ginger apple slaw</description>
+        <prices>
+          <price currency="CAD" type="uncountable">34</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+    </menu>
+  </restaurant>
+  <restaurant status="reviewed">
+    <name>Gong's Asian Cuisine</name>
+    <logo />
+    <image>
+      <file>gong-asian-cuisine.gif</file>
+      <width unit="pixel">150</width>
+      <length unit="pixel">250</length>
+    </image>
+    <location>
+      <address>1385 Woodroffe Avenue</address>
+      <city>Ottawa</city>
+      <province>Ontario</province>
+      <postalCode>K2G 1V8</postalCode>
+    </location>
+    <phone>613-727-4723</phone>
+    <rating max="5" min="0">2</rating>
+    <date>
+      <day>3</day>
+      <month>1</month>
+      <year>2015</year>
+    </date>
+    <reviewer>Brenda P. Smith</reviewer>
+    <summary>Supplement your meal with something from their immense wine list or the extensive range of original cocktails.</summary>
+    <menu>
+      <food type="appetizers">
+        <description>Egg Roll</description>
+        <prices>
+          <price currency="CAD" type="uncountable" />
+          <price currency="CAD" type="countable" quantity="1">1.5</price>
+          <price currency="CAD" type="countable" quantity="12">15</price>
+        </prices>
+      </food>
+      <food type="appetizers">
+        <description>Spring Roll</description>
+        <prices>
+          <price currency="CAD" type="uncountable" />
+          <price currency="CAD" type="countable" quantity="1">1.8</price>
+          <price currency="CAD" type="countable" quantity="12">18</price>
+        </prices>
+      </food>
+      <food type="appetizers">
+        <description>Shrimp Chips</description>
+        <prices>
+          <price currency="CAD" type="uncountable">2.5</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="appetizers">
+        <description>Fried Noodles</description>
+        <prices>
+          <price currency="CAD" type="uncountable">1</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="appetizers">
+        <description>Sweet and Sour Fried Wonton Skin</description>
+        <prices>
+          <price currency="CAD" type="uncountable" />
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12">3.5</price>
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Scallops with Vegetables</description>
+        <prices>
+          <price currency="CAD" type="uncountable">14.95</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Sweet and Sour Fish Cantonese Style</description>
+        <prices>
+          <price currency="CAD" type="uncountable">13.95</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Shrimps with Vegetables</description>
+        <prices>
+          <price currency="CAD" type="uncountable">12.95</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Beef with Mushrooms</description>
+        <prices>
+          <price currency="CAD" type="uncountable">10.25</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Beef with Tomatoes</description>
+        <prices>
+          <price currency="CAD" type="uncountable">10.25</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+      <food type="entrees">
+        <description>Beef with Broccoli</description>
+        <prices>
+          <price currency="CAD" type="uncountable">10.25</price>
+          <price currency="CAD" type="countable" quantity="1" />
+          <price currency="CAD" type="countable" quantity="12" />
+        </prices>
+      </food>
+    </menu>
+  </restaurant>
+</restaurants>

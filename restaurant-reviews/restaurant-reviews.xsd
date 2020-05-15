@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="https://www.algonquincollege.com/onlineservice/reviews"
+           xmlns:r="https://www.algonquincollege.com/onlineservice/reviews"
+           elementFormDefault="qualified">
+
+  <xs:element name="restaurants">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="r:restaurant" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="restaurant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="r:name" />
+        <xs:element ref="r:logo" />
+        <xs:element ref="r:image" />
+        <xs:element ref="r:location" />
+        <xs:element ref="r:phone" />
+        <xs:element ref="r:rating" />
+        <xs:element ref="r:date" />
+        <xs:element ref="r:reviewer" />
+        <xs:element ref="r:summary" />
+        <xs:element ref="r:menu" />
+      </xs:sequence>
+      <xs:attribute name="status" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="name" type="xs:string" />
+  
+  <xs:element name="logo" type="xs:string" />
+  
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="r:file" />
+        <xs:element ref="r:width" />
+        <xs:element ref="r:length" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="file" type="xs:string" />
+  
+  <xs:element name="width">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:positiveInteger">
+          <xs:attribute name="unit" type="xs:string" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="length">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:positiveInteger">
+          <xs:attribute name="unit" type="xs:string" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="location">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="r:address" />
+        <xs:element ref="r:city" />
+        <xs:element ref="r:province" />
+        <xs:element ref="r:postalCode" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="address" type="xs:string" />
+  
+  <xs:element name="city" type="xs:string" />
+  
+  <xs:element name="province" type="xs:string" />
+  
+  <xs:element name="postalCode" type="xs:string" />
+  
+  <xs:element name="phone" type="xs:string" />
+  
+  <xs:element name="rating">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:decimal">
+          <xs:attribute name="max" type="xs:int" use="required" />
+          <xs:attribute name="min" type="xs:int" use="required" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="date">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="r:day" />
+        <xs:element ref="r:month" />
+        <xs:element ref="r:year" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="day" type="xs:string" />
+  
+  <xs:element name="month" type="xs:string" />
+  
+  <xs:element name="year" type="xs:string" />
+  
+  <xs:element name="reviewer" type="xs:string" />
+  
+  <xs:element name="summary" type="xs:string" />
+  
+  <xs:element name="menu">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="r:food" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="food">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="r:description" />
+        <xs:element ref="r:prices" />
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="description" type="xs:string" />
+  
+  <xs:element name="prices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="r:price" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="price">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="currency" type="xs:string" use="required" />
+          <xs:attribute name="type"  type="xs:string" use="required" />
+          <xs:attribute name="quantity" type="xs:positiveInteger" use="optional" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>

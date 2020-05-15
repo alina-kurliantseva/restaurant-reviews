@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "restaurant-reviews", "restaurant-reviews\", "{8B84B278-EC9F-4AF4-8F65-4250E00BB9BE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57950"
+		Debug.AspNetCompiler.PhysicalPath = "restaurant-reviews\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57950\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57950"
+		Release.AspNetCompiler.PhysicalPath = "restaurant-reviews\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57950\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57950"
+		SlnRelativePath = "restaurant-reviews\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B84B278-EC9F-4AF4-8F65-4250E00BB9BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B84B278-EC9F-4AF4-8F65-4250E00BB9BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D0170CF-19CE-4FA5-A8F4-24E0F66DF1AA}
+	EndGlobalSection
+EndGlobal
